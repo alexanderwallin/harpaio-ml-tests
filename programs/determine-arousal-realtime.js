@@ -29,10 +29,8 @@ async function run() {
 
   // Collect values
   let history = []
-  input.on('message', (deltaTime, [, cc]) => {
-    if (cc === 1) {
-      history.push(deltaTime)
-    }
+  input.on('message', deltaTime => {
+    history.push(deltaTime)
 
     if (history.length === 20) {
       const normalisedHistory = history.map(x => x / 10)

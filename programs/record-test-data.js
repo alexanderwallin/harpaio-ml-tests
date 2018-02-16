@@ -69,10 +69,8 @@ async function run() {
       progressBar.tick(0)
 
       // Set up the MIDI event listener
-      const onMidiEvent = (deltaTime, [, cc, value]) => {
-        if (cc === 1) {
-          recording.push({ deltaTime, value })
-        }
+      const onMidiEvent = (deltaTime, [, , value]) => {
+        recording.push({ deltaTime, value })
       }
       input.on('message', onMidiEvent)
 
