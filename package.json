@@ -1,0 +1,23 @@
+{
+  "name": "harpaio-ml-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alexander Wallin <office@alexanderwallin.com> (http://alexanderwallin.com)",
+  "license": "The Unlicense",
+  "dependencies": {
+    "ascii-progress": "^1.0.5",
+    "clui": "^0.3.6",
+    "fse": "^4.0.0",
+    "inquirer": "^5.1.0",
+    "midi": "^0.9.5",
+    "progress": "^2.0.0",
+    "tinytime": "^0.2.6"
+  },
+  "devDependencies": {
+    "prettier": "^1.10.2"
+  }
+}
