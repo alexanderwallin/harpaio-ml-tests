@@ -1,4 +1,3 @@
-const clui = require('clui')
 const fse = require('fse')
 const inquirer = require('inquirer')
 const midi = require('midi')

@@ -10,7 +10,6 @@
   "license": "The Unlicense",
   "dependencies": {
     "ascii-progress": "^1.0.5",
-    "clui": "^0.3.6",
     "fse": "^4.0.0",
     "inquirer": "^5.1.0",
     "midi": "^0.9.5",
