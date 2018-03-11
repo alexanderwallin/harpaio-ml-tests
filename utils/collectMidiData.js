@@ -1,0 +1,22 @@
+const delay = require('./delay.js')
+
+module.exports = async function collectMidiData(
+  input,
+  { duration, type = 'cc', id = null, channel = 0 }
+) {
+  const values = []
+
+  const storeMidiValue = (deltaTime, [command, inputId, value]) => {
+    if (type === 'cc' && 176 <= command && command < 192) {
+      if (channel === command - 176 && (id === null || id === inputId)) {
+        values.push(value)
+      }
+    }
+  }
+
+  input.on('message', storeMidiValue)
+  await delay(duration)
+  input.removeListener('message', storeMidiValue)
+
+  return values
+}
