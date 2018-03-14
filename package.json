@@ -9,6 +9,7 @@
   "author": "Alexander Wallin <office@alexanderwallin.com> (http://alexanderwallin.com)",
   "license": "The Unlicense",
   "dependencies": {
+    "args": "^3.0.8",
     "ascii-progress": "^1.0.5",
     "fse": "^4.0.0",
     "globby": "^8.0.0",
